@@ -1,0 +1,8 @@
+if (account_cache.account_id == trans.out_account_id) {
+    account_cache.other_account_id == trans.in_account_id;
+    trans.out_account_id != trans.in_account_id;
+} else {
+    account_cache.account_id == trans.in_account_id;
+    account_cache.other_account_id == trans.out_account_id;
+    account_cache.account_id != account_cache.other_account_id;
+}

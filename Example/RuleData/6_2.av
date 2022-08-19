@@ -1,0 +1,9 @@
+trans.ip_logc.currency==tranfront.ip_log.currency;
+trans.ip_logc.amount==tranfront.ip_log.amount;
+if(trans.ip_logc.id == 0){
+trans.ip_logc.other_account_no==tranfront.ip_log.iid;
+tranfront.ip_log.oid==trans.ip_logc.account_no;
+}else{
+tranfront.ip_log.oid==trans.ip_logc.other_account_no;
+trans.ip_logc.account_no==tranfront.ip_log.iid;
+}

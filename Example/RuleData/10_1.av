@@ -1,0 +1,1 @@
+ieshopprod.s_budget_stock.stock >= ieshopprod.s_budget_stock.sale_count + ieshopprod.s_budget_stock.reserve_count

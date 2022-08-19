@@ -1,0 +1,202 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "==",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "ac"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "account_id"
+          }
+        },
+        "right": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "trans"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "in_account_id"
+          }
+        }
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "==",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "ac"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "other_account_id"
+                }
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "trans"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "out_account_id"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "==",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "ac"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "account_id"
+                }
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "trans"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "out_account_id"
+                }
+              }
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "==",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "ac"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "other_account_id"
+                }
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "trans"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "in_account_id"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "!=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "ac"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "other_account_id"
+          }
+        },
+        "right": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "ac"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "account_id"
+          }
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "!=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "trans"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "out_account_id"
+          }
+        },
+        "right": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "trans"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "in_account_id"
+          }
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

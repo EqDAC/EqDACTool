@@ -1,0 +1,1 @@
+acc.in_id != nil && acc.out_id != nil;

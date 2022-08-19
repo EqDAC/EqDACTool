@@ -1,0 +1,171 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "!=",
+          "left": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "in_id"
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "nil"
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "!=",
+          "left": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "out_id"
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "nil"
+          }
+        }
+      }
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "string"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "contains"
+          }
+        },
+        "arguments": [
+          {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "type"
+            }
+          },
+          {
+            "type": "Literal",
+            "value": "IN",
+            "raw": "\"IN\""
+          }
+        ]
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "acc"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "in_account"
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0"
+              }
+            }
+          }
+        ]
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "acc"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "out_account"
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "!=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "trans"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "ip_log"
+          }
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "nil"
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

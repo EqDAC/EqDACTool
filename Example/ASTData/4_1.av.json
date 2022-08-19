@@ -1,0 +1,231 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "!=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "trans"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "ip_log"
+          }
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "nil"
+        }
+      }
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "string"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "contains"
+          }
+        },
+        "arguments": [
+          {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "type"
+            }
+          },
+          {
+            "type": "Literal",
+            "value": "IN",
+            "raw": "\"IN\""
+          }
+        ]
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "amount"
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "acc"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "in_account"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "amount"
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "acc"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "out_account"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "result1"
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": ">",
+          "left": {
+            "type": "Identifier",
+            "name": "amount"
+          },
+          "right": {
+            "type": "Literal",
+            "value": 0,
+            "raw": "0"
+          }
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "result2"
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "!=",
+          "left": {
+            "type": "Identifier",
+            "name": "nil"
+          },
+          "right": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "in_id"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "result3"
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "!=",
+          "left": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "out_id"
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "nil"
+          }
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "LogicalExpression",
+          "operator": "&&",
+          "left": {
+            "type": "Identifier",
+            "name": "result1"
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "result2"
+          }
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "result3"
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

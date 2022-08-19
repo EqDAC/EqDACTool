@@ -1,0 +1,129 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "LogicalExpression",
+        "operator": "||",
+        "left": {
+          "type": "LogicalExpression",
+          "operator": "&&",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "==",
+            "left": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "acc"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "in_id"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0"
+            }
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "==",
+            "left": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "acc"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "out_id"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0"
+            }
+          }
+        },
+        "right": {
+          "type": "LogicalExpression",
+          "operator": "&&",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "!=",
+            "left": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "acc"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "in_id"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0"
+            }
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "!=",
+            "left": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "acc"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "out_id"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "!=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "trans"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "ip_log"
+          }
+        },
+        "right": {
+          "type": "Literal",
+          "value": 0,
+          "raw": "0"
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

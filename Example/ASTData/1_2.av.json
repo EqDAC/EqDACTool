@@ -1,0 +1,67 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "amount"
+        },
+        "right": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "acc"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "out_id"
+          }
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "!=",
+        "left": {
+          "type": "Identifier",
+          "name": "amount"
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "nil"
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "!=",
+        "left": {
+          "type": "Identifier",
+          "name": "nil"
+        },
+        "right": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "acc"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "in_id"
+          }
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

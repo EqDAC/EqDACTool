@@ -1,0 +1,121 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "LogicalExpression",
+          "operator": "&&",
+          "left": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "string"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "contains"
+              }
+            },
+            "arguments": [
+              {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "charge"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "gp_service_event"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "funds"
+                }
+              },
+              {
+                "type": "Literal",
+                "value": "GENERAL_VOUCHER",
+                "raw": "\"GENERAL_VOUCHER\""
+              }
+            ]
+          },
+          "right": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "string"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "endsWith"
+              }
+            },
+            "arguments": [
+              {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "charge"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "gp_service_event"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "rmc_guid"
+                }
+              },
+              {
+                "type": "Literal",
+                "value": "_t",
+                "raw": "\"_t\""
+              }
+            ]
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "!=",
+          "left": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "charge"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "gp_service_event_ext"
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "nil"
+          }
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

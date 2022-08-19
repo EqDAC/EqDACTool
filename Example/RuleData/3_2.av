@@ -1,0 +1,1 @@
+(string.contains(acc.type, "middle") || string.contains(acc.type, "in") || string.contains(acc.type, "out")) && acc.amount >0;

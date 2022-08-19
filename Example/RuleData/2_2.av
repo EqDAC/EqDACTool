@@ -1,0 +1,2 @@
+(acc.in_id == 0 && acc.out_id == 0) || (acc.in_id != 0 && acc.out_id != 0);
+trans.ip_log!=0;

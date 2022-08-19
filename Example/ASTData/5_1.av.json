@@ -1,0 +1,108 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "==",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "acc"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "in_id"
+          }
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "nil"
+        }
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "==",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "acc"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "out_id"
+                }
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "nil"
+              }
+            }
+          }
+        ]
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "!=",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "acc"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "out_id"
+                }
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "nil"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "!=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "trans"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "ip_log"
+          }
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "nil"
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

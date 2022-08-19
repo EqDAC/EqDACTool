@@ -1,0 +1,9 @@
+acc.in_id != nil && acc.out_id != nil;
+
+if (string.contains(acc.type, "IN")) {
+    acc.in_account > 0;
+} else {
+    acc.out_account > 0;
+}
+
+trans.ip_log!=nil;

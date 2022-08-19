@@ -1,0 +1,7 @@
+if (acc.in_id == nil) {
+    acc.out_id == nil;
+} else {
+    acc.out_id != nil;
+}
+
+trans.ip_log!=nil;

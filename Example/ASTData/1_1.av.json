@@ -1,0 +1,53 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "!=",
+          "left": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "in_id"
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "nil"
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "!=",
+          "left": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "out_id"
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "nil"
+          }
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

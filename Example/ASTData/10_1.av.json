@@ -1,0 +1,77 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": ">=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "ieshopprod"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "s_budget_stock"
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "stock"
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "+",
+          "left": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "ieshopprod"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "s_budget_stock"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "sale_count"
+            }
+          },
+          "right": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "ieshopprod"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "s_budget_stock"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "reserve_count"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

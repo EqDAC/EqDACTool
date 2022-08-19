@@ -1,0 +1,144 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "LogicalExpression",
+          "operator": "||",
+          "left": {
+            "type": "LogicalExpression",
+            "operator": "||",
+            "left": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "string"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "contains"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "acc"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "type"
+                  }
+                },
+                {
+                  "type": "Literal",
+                  "value": "middle",
+                  "raw": "\"middle\""
+                }
+              ]
+            },
+            "right": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "string"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "contains"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "acc"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "type"
+                  }
+                },
+                {
+                  "type": "Literal",
+                  "value": "in",
+                  "raw": "\"in\""
+                }
+              ]
+            }
+          },
+          "right": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "string"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "contains"
+              }
+            },
+            "arguments": [
+              {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "acc"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "type"
+                }
+              },
+              {
+                "type": "Literal",
+                "value": "out",
+                "raw": "\"out\""
+              }
+            ]
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": ">",
+          "left": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "acc"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "amount"
+            }
+          },
+          "right": {
+            "type": "Literal",
+            "value": 0,
+            "raw": "0"
+          }
+        }
+      }
+    }
+  ],
+  "sourceType": "script"
+}

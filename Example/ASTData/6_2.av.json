@@ -1,0 +1,330 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "==",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "trans"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "ip_logc"
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "currency"
+          }
+        },
+        "right": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "tranfront"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "ip_log"
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "currency"
+          }
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "==",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "trans"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "ip_logc"
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "amount"
+          }
+        },
+        "right": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "tranfront"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "ip_log"
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "amount"
+          }
+        }
+      }
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "==",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "trans"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "ip_logc"
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "id"
+          }
+        },
+        "right": {
+          "type": "Literal",
+          "value": 0,
+          "raw": "0"
+        }
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "==",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "trans"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "ip_logc"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "other_account_no"
+                }
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "tranfront"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "ip_log"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "iid"
+                }
+              }
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "==",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "tranfront"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "ip_log"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "oid"
+                }
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "trans"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "ip_logc"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "account_no"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "==",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "tranfront"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "ip_log"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "oid"
+                }
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "trans"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "ip_logc"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "other_account_no"
+                }
+              }
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "==",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "trans"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "ip_logc"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "account_no"
+                }
+              },
+              "right": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "tranfront"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "ip_log"
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "iid"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "sourceType": "script"
+}

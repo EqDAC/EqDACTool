@@ -1,0 +1,3 @@
+string.contains(charge.gp_service_event.funds,"GENERAL_VOUCHER")
+&& string.endsWith(charge.gp_service_event.rmc_guid,"_t")
+&& charge.gp_service_event_ext != nil
